@@ -27,7 +27,7 @@ body {
 }
 
 .nav-menu > li > a,
-.logo{
+.logo {
   text-decoration: none;
   cursor: pointer;
 }
@@ -56,6 +56,9 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 15px;
+  border: 1px dashed rgb(36, 113, 163);
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .imgDiv {
@@ -118,7 +121,7 @@ body {
   width: 650px;
   height: auto;
   margin: 0 auto;
-  background-color: yellow;
+  background-color: rgba(36, 113, 163, 0.8);
   top: 20px;
   left: 300px;
   z-index: 4;
@@ -127,6 +130,8 @@ body {
   flex-direction: column;
   align-items: center;
   overflow-y: auto;
+  padding-bottom: 50px;
+  color: #fff;
 }
 
 .popup-display {
