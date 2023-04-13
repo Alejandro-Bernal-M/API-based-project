@@ -5,10 +5,21 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+:root {
+  --color-1: #ba5536;
+  --color-2: #a43820;
+  --color-3: #693d3d;
+  --color-4: #46211a;
+}
+
 html,
 body {
   width: 100%;
   height: 100%;
+}
+
+body {
+  background-color: var(--color-1);
 }
 
 .nav {
@@ -18,6 +29,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
+  background-color: var(--color-3);
+  color:#fff;
 }
 
 .nav-menu {
@@ -39,8 +52,8 @@ body {
 }
 
 .card-holder {
-  height: 800px;
-  width: 80%;
+  height: 1000px;
+  width: 90%;
   display: grid;
   grid-template-columns: repeat(auto-fit, 33%);
   grid-template-rows: 1fr 1fr;
@@ -49,14 +62,14 @@ body {
 }
 
 .card {
-  height: 300px;
-  width: 200px;
+  height: 400px;
+  width: 290px;
   justify-self: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
-  border: 1px dashed rgb(36, 113, 163);
+  border: 1px dashed var(--color-4);
   padding: 10px;
   border-radius: 10px;
 }
