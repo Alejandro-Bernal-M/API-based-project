@@ -5,7 +5,7 @@ export default async () => {
   const likes = await getLikesFromAPI();
   likeCounters.forEach((counter) => {
     for (let i = 0; i < likes.length; i += 1) {
-      if (likes[i].item_id === counter.parentNode.childNodes[1].childNodes[0].textContent) {
+      if (likes[i].item_id === counter.parentNode.previousSibling.textContent) {
         counter.innerHTML = `likes ${likes[i].likes}`;
       }
     }
