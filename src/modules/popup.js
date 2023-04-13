@@ -19,15 +19,15 @@ export default async (
       </div>
       <h2 class = "cars-popup-title">${btn.parentNode.childNodes[1].childNodes[0].textContent}</h2>
       <div class="cars-features">
-      <p>model:  ${array[btn.parentNode.id].name} </p>
-      <p>price:  ${array[btn.parentNode.id].price}</p>
+      <p>Model:  ${array[btn.parentNode.id].name} </p>
+      <p>Price:  ${array[btn.parentNode.id].price}</p>
       </div>
       <div class="comment-and-form">
       <form class="form">
       <div class="formContent">
         <h2 class = "add-comment">Add a comment</h2>
-        <input id ="name" placeholder="your name" type="text">
-        <input id ="insights" placeholder="your insights" type="text">
+        <input id ="name" placeholder="your name" type="text" />
+        <textarea id ="insights" placeholder="your insights" type="text"></textarea>
         <button id = "button" class="btn" type="submit">Submit</button>
       </div>
       </form>
@@ -57,9 +57,9 @@ export default async (
         if (obj.username !== '') {
           commentsDiv.innerHTML += `
           <div class="commentaries">
-          <p class="commentName">Name= ${obj.username}</p>
-          <p class="commentCom">Comment= ${obj.comment}</p>
-          <p class="creationDate">Date and Time=${obj.creation_date}</p>
+          <p class="creationDate">Date and Time: ${obj.creation_date}</p>
+          <p class="commentName">Name: ${obj.username}</p>
+          <p class="commentCom">Comment: ${obj.comment}</p>
           `;
         }
         const howManyComments = document.querySelector('.howManyComments');
@@ -73,9 +73,9 @@ export default async (
     if (obj.username !== '') {
       commentsDiv.innerHTML += `
       <div class="commentaries">
-      <p class="creationDate">Date of comment=${obj.creation_date}</p>
-      <p class="commentName">Name= ${obj.username}</p>
-      <p class="commentCom">Comment= ${obj.comment}</p>
+      <p class="creationDate">Date of comment: ${obj.creation_date}</p>
+      <p class="commentName">Name: ${obj.username}</p>
+      <p class="commentCom">Comment: ${obj.comment}</p>
       `;
     }
   });
