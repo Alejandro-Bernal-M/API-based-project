@@ -10,7 +10,7 @@
 :root {
   --color-1: #df0909;
   --color-2: #a43820;
-  --color-3: #000000;
+  --color-3: #000;
   --color-4: #46211a;
 }
 
@@ -32,7 +32,7 @@ body {
   align-items: center;
   padding: 15px 30px;
   background-color: var(--color-3);
-  color:#fff;
+  color: #fff;
 }
 
 .nav-menu {
@@ -54,10 +54,10 @@ body {
 }
 
 .title-container {
- margin: 0 auto;
- text-align: center;
- width: 30%;
- margin-top: 30px;
+  margin: 0 auto;
+  text-align: center;
+  width: 30%;
+  margin-top: 30px;
 }
 
 .title-container > h2 {
@@ -137,7 +137,7 @@ body {
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  color:#fff
+  color: #fff;
 }
 
 .btn:active {
@@ -166,7 +166,7 @@ body {
 .footer2 {
   height: 20%;
   width: 100%;
-  background-color: #000000;
+  background-color: #000;
   border-top: 2px solid black;
 }
 
